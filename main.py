@@ -49,7 +49,7 @@ logger = logging.getLogger(__name__)
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Create generative models
-model = genai.GenerativeModel("gemini-pro-vision")
+model = genai.GenerativeModel("gemini-1.5-flash")
 model1 = genai.GenerativeModel("gemini-pro")
 
 
