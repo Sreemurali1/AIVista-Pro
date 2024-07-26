@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="static/style.css"> 
+</head>
+<body>
+
+    <div class="center-container">
+        <div id="responses"> 
+            <h1>LARGE LANGUAGE MODEL</h1>
+            <div class="form-row">
+
+                <input type="text" id="question" name="question" placeholder="Enter your query here..."><br><br>
+                <div class="button-container"> 
+                    <button onclick="processInput()">Submit</button>
+                    <button onclick="clearForm()">Clear</button>
+                </div>
+            </div> 
+            <div class="upload-section">  
+                <div class="file-preview-container"> 
+                    <label for="fileInput" id="fileLabel">
+                        <span class="upload-icon">
+                            <img src="static/images/pdficon.png" alt="Upload file" /> 
+                        </span> 
+                    </label>
+                    <input type="file" id="fileInput" name="file" accept=".pdf, .docx"> 
+                    <div id="filePreview"></div> 
+                </div>
+                <span class="or-divider">OR</span> 
+                <div class="image-preview-container">
+                    <label for="imageInput" id="imageLabel">
+                        <span class="upload-icon">
+                            <img src="static/images/image.png" alt="Upload image" /> 
+                        </span> 
+                    </label>
+                    <input type="file" id="imageInput" name="image" accept="image/*">
+                    <div id="imagePreview"></div> 
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="result">
+
+      <div id="response"></div>
+  </div>
+    <script src="static/script.js"></script> 
+</body>
+</html>

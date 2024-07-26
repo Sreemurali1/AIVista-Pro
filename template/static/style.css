@@ -1,0 +1,236 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #212121; /* Keep a light background for contrast */
+  }
+  
+  /* Container Styling - Using a consistent pale color across containers */
+  div { 
+    background-color: #212121;  /* A soft, light blue */
+    padding: 20px;
+    border-radius: 8px;
+    
+  }
+  
+
+#filePreview, #imagePreview {
+    border: 1px dashed #b69f9f;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+
+
+    background-color: #212121;
+    border-radius: 5px;
+    position: relative;
+}
+
+#filePreview.pdf-file::before {
+    content: '';
+    background-image: url("images/pdficon.png"); /* Replace with the path to your icon */
+    background-size: 50px; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.6; 
+    display: inline-block;
+} 
+
+button {
+    background-color: #007bff; 
+    background-image: linear-gradient(#0085ff, #0062cc);
+    color: white;
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.3s ease;
+    margin: 10px 10px 10px 0; /* Add margins */
+  }
+
+
+/* Add an element with clear: both to address the float */
+.form-row::after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+
+.button-container { /* Add if not already present */
+    margin-top: 15px; 
+    display: flex; /* Arrange buttons horizontally if desired */
+    gap: 10px;     /* Adjust this for the spacing between buttons */
+  }
+
+button:hover {
+    background-color: #0056b3; 
+    background-image: linear-gradient(#006bff, #004899); /* Darker gradient */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+#responses { 
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #0d0d0d;
+    margin-bottom: 100px;
+    font-weight: bold;
+    margin-right: 800px;
+    white-space: pre-line;
+    margin-left: 0px;
+    margin-top: 00px;
+    color: white;
+    position: relative;
+}
+
+#response { 
+  border: 1px solid #ddd;
+  height: 800px;
+  font-weight: bold;
+  font-size: medium;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: black;
+  text-align: justify;
+  line-break: "\n";
+  white-space: pre-line;
+  color: white;
+  position: relative;
+  margin-left: 46%;
+  margin-top: -2.5%;
+}
+
+
+
+
+.upload-icon {
+    display: inline-block;
+    margin-right: -10px;
+
+    cursor: pointer;
+}
+
+.upload-icon img {
+  width: 50px; 
+  height: 50px;
+}
+
+
+
+.form-row {
+    display: flex;
+    align-items: last baseline; /* Align items vertically to the center */
+  }
+  
+
+
+
+#fileInput, #imageInput {
+    opacity: 0;   /* Initially hidden, adjust if needed */
+    width: 0;
+    height: 0; 
+       
+    
+}
+
+/* Styling the labels to be interactive */
+#fileLabel, #imageLabel {
+    display: inline-block; 
+    cursor: pointer;
+}
+
+/* Input Styling */
+input[type="text"], 
+input[type="file"] {
+  padding: 1px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: calc(100% - 22px);
+}
+
+input[type="text"], button {
+    display: inline-block;
+  }
+  
+
+
+
+/* Upload Section */
+.upload-section {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .file-preview-container {
+    display: flex;
+    border: 1px dashed #a99a9a;
+    flex-direction: column;
+    height: 310px;
+
+    align-items: right;
+    text-align: center; /* Center text within container */
+    position: relative;
+
+  }
+
+  .image-preview-container {
+    display: flex;
+    border: 1px dashed #ccc;
+    flex-direction: column;
+    height: 310px;
+    align-items: center;
+    text-align: center; /* Center text within container */
+
+  }
+  
+  .or-divider {
+    margin:0 10px; /* Spacing around the "OR" */
+    color: white;
+  }
+
+
+
+/* Preview Containers */
+#filePreview, #imagePreview {
+    border: 1px dashed #847a7a;
+    padding: 10px;
+
+    align-self: center;
+    border-radius: px;
+    color: white;
+    position: relative; /* Prevent content from spilling outside */
+  }
+#question {
+    background-color: black;
+    color: white;
+    width: 60%;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 12px 20px;
+}
+  
+.center-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(30, 192, 162), rgb(181, 8, 120), rgb(14, 86, 209), rgb(70, 11, 141), rgb(220, 10, 189), rgb(230, 230, 17)); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+  
+
