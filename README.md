@@ -26,4 +26,4 @@ This project leverages the capabilities of FastAPI, Gemini 1.5 Flash, and Gemini
 1. An advanced AI model for detailed and precise natural language understanding and QA.
 2. Enhances the system's ability to comprehend complex queries and provide accurate answers.
 
-#### Click here to see ----> https://aivista-pro.onrender.com/
+#### Click here to see ----> https://huggingface.co/spaces/sreemurali/AI-Vista-Pro
